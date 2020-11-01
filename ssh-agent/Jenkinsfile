@@ -1,4 +1,4 @@
-node('master') {
+node  {
   stage('do something with git') {  
     sshagent (credentials: ['github-ssh-agent']) {
       // get the last commit id from a repository you own
